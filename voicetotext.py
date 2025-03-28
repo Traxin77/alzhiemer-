@@ -57,14 +57,20 @@ def main():
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     
     # Welcome message
-    speak("Hello.")
+    speak(f"Hello {patient_name}")
     speak("few questions.")
     
     # List of questions to ask
     questions = [
         "How are you feeling today?",
-        "Can you tell me about your day?",
-        "Do you have any difficulty remembering recent events?"
+        "What is today's date?",
+        "Can you tell me where you are right now?",
+        "Can you describe your day?",
+        "I will say three words: Apple, Table, and River. Can you repeat them now?",
+        "Im going to say a short sentence, and I would like you to repeat it after me: 'The sun sets in the west.",
+        "Did you sleep well last night?",
+        "If you have 20 rupees and you buy a chocolate for 7 rupees, how much money do you have left?",
+        "Can you tell me the three words I asked you to remember earlier?"
     ]
     
     responses = {}
